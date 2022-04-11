@@ -1,0 +1,11 @@
+
+<div fullscreen>
+<h1>Login</h1>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+      <label>Username</label>
+      <input matInput formControlName="username" required>
+      <br> <label>Password</label>
+      <input matInput type="password" formControlName="password" required/>
+      <br>  <button mat-raised-button color="primary" type="submit">Login</button>
+  </form>
+</div>
